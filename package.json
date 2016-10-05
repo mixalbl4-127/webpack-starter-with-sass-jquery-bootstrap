@@ -1,0 +1,38 @@
+{
+  "name": "Webpack-starter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start_dev": "webpack-dev-server --config config/webpack.dev.js --inline --progress --port 8080",
+    "start_prod": "webpack-dev-server --config config/webpack.prod.js --inline --progress --port 8080",
+    "build_prod": "webpack --config config/webpack.prod.js --progress --profile --bail",
+    "build_dev": "webpack --config config/webpack.dev.js --progress --profile --bail",
+    "watch_prod": "webpack --config config/webpack.prod.js --progress --profile --bail --watch",
+    "watch_dev": "webpack --config config/webpack.dev.js --progress --profile --bail --watch",
+    "postinstall": "typings install"
+  },
+  "license": "",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "clean-webpack-plugin": "^0.1.11",
+    "css-loader": "^0.23.1",
+    "extract-loader": "0.0.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.15.0",
+    "jquery": "^3.1.1",
+    "node-sass": "^3.10.1",
+    "null-loader": "^0.1.1",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.14.0"
+  }
+}
