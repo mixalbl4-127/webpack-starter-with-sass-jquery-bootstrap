@@ -49,7 +49,7 @@ module.exports = function (env) {
                     use: ExtractTextPlugin.extract({
                         fallback: "style-loader",
                         use: "css-loader",
-                        publicPath: "/dist"
+                        // publicPath: "/dist"
                     })
                 },
                 // For include to <style> tag!
@@ -88,7 +88,7 @@ module.exports = function (env) {
                                         }
                                     }
                                 ],
-                                publicPath: "/dist"
+                                // publicPath: "/dist"
                             }
                         )
                 },
